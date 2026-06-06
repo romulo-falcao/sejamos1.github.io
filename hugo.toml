@@ -1,4 +1,4 @@
-baseURL = 'https://sejamos1.github.io'
+baseURL = 'https://romulo-falcao.github.io/sejamos1.github.io'
 locale = 'pt-BR'
 title = 'Somos 1 — Guerreiro em Cristo'
 theme = 'hugo-paper'
