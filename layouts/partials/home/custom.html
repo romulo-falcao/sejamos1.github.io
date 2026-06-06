@@ -1,9 +1,11 @@
 {{ $trilha1 := .Site.GetPage "trilha-1" }}
+{{ $trilha2 := .Site.GetPage "trilha-2" }}
+{{ $trilha3 := .Site.GetPage "trilha-3" }}
 
 <section class="max-w-4xl mx-auto text-center px-4 py-12">
   <div class="mb-8">
     <h1 class="text-5xl sm:text-6xl font-bold mb-4" style="color: var(--color-primary-500);">
-      Somos 1
+      Sejamos 1
     </h1>
     <p class="text-xl sm:text-2xl text-neutral-500 dark:text-neutral-400 italic mb-6">
       "Para que todos sejam um, como tu, ó Pai, estás em mim e eu em ti."
@@ -49,39 +51,41 @@
       </div>
     </a>
 
-    {{/* Trilha 2 — futura */}}
-    <div class="rounded-2xl border-2 border-dashed border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 p-6 opacity-75 cursor-default">
-      <div class="text-4xl mb-4 text-neutral-300 dark:text-neutral-600">
-        {{ partial "icon.html" "list-check" }}
+    {{/* Trilha 2 — pronta */}}
+    <a href="{{ $trilha2.RelPermalink }}" class="block group">
+      <div class="rounded-2xl border-2 border-primary-200 dark:border-primary-800 bg-white dark:bg-neutral-800 p-6 hover:shadow-lg hover:border-primary-400 dark:hover:border-primary-600 transition-all duration-300">
+        <div class="text-4xl mb-4 text-primary-500 group-hover:scale-110 transition-transform duration-300">
+          {{ partial "icon.html" "list-check" }}
+        </div>
+        <h3 class="text-xl font-bold mb-2 text-neutral-800 dark:text-neutral-100 group-hover:text-primary-600 transition-colors">
+          Trilha 2
+        </h3>
+        <p class="text-sm text-neutral-500 dark:text-neutral-400 font-medium uppercase tracking-wider mb-3">
+          Já ouvi falar, quero entender mais
+        </p>
+        <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">
+          Para quem tem contato superficial e quer base bíblica e respostas.
+        </p>
       </div>
-      <h3 class="text-xl font-bold mb-2 text-neutral-400 dark:text-neutral-500">
-        Trilha 2
-      </h3>
-      <p class="text-sm text-neutral-400 dark:text-neutral-500 font-medium uppercase tracking-wider mb-3">
-        Já ouvi falar, quero entender mais
-      </p>
-      <p class="text-neutral-400 dark:text-neutral-500 text-sm leading-relaxed">
-        Para quem tem contato superficial e quer base bíblica e respostas.
-        <span class="inline-block ml-1 text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-0.5 rounded-full">Em breve</span>
-      </p>
-    </div>
+    </a>
 
-    {{/* Trilha 3 — futura */}}
-    <div class="rounded-2xl border-2 border-dashed border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800 p-6 opacity-75 cursor-default">
-      <div class="text-4xl mb-4 text-neutral-300 dark:text-neutral-600">
-        {{ partial "icon.html" "star" }}
+    {{/* Trilha 3 — pronta */}}
+    <a href="{{ $trilha3.RelPermalink }}" class="block group">
+      <div class="rounded-2xl border-2 border-primary-200 dark:border-primary-800 bg-white dark:bg-neutral-800 p-6 hover:shadow-lg hover:border-primary-400 dark:hover:border-primary-600 transition-all duration-300">
+        <div class="text-4xl mb-4 text-primary-500 group-hover:scale-110 transition-transform duration-300">
+          {{ partial "icon.html" "star" }}
+        </div>
+        <h3 class="text-xl font-bold mb-2 text-neutral-800 dark:text-neutral-100 group-hover:text-primary-600 transition-colors">
+          Trilha 3
+        </h3>
+        <p class="text-sm text-neutral-500 dark:text-neutral-400 font-medium uppercase tracking-wider mb-3">
+          Sou cristão, quero crescer
+        </p>
+        <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">
+          Para quem já crê e busca profundidade e desafio espiritual.
+        </p>
       </div>
-      <h3 class="text-xl font-bold mb-2 text-neutral-400 dark:text-neutral-500">
-        Trilha 3
-      </h3>
-      <p class="text-sm text-neutral-400 dark:text-neutral-500 font-medium uppercase tracking-wider mb-3">
-        Sou cristão, quero crescer
-      </p>
-      <p class="text-neutral-400 dark:text-neutral-500 text-sm leading-relaxed">
-        Para quem já crê e busca profundidade e desafio espiritual.
-        <span class="inline-block ml-1 text-xs bg-neutral-100 dark:bg-neutral-700 px-2 py-0.5 rounded-full">Em breve</span>
-      </p>
-    </div>
+    </a>
 
   </div>
 

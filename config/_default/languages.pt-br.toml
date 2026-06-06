@@ -1,7 +1,7 @@
 locale = "pt-br"
 label = "Português (Brasil)"
 weight = 1
-title = "Somos 1 — Guerreiro em Cristo"
+title = "Sejamos 1 — Guerreiro em Cristo"
 
 [params]
   displayName = "Português (Brasil)"
@@ -11,7 +11,7 @@ title = "Somos 1 — Guerreiro em Cristo"
   description = "Um projeto cristão de evangelização. Uma imagem, um QR Code, três trilhas para conhecer Jesus."
 
 [params.author]
-  name = "Somos 1"
+  name = "Sejamos 1"
   image = "img/author.jpg"
   headline = "Para que todos sejam um"
   bio = "Projeto cristão baseado em João 17:21 e Efésios 6:10-18."

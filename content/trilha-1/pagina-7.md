@@ -24,7 +24,7 @@ Isso é o começo. E começos importam.
 
 **Busque uma comunidade.** A fé não foi feita para ser vivida sozinho. Encontre uma igreja onde a Bíblia é ensinada com seriedade e onde você se sinta acolhido.
 
-**Continue explorando.** Aqui no site você encontra as trilhas 2 e 3, para quem quer ir mais fundo. Vá no seu ritmo.
+**Continue explorando.** Aqui no site você encontra a [Trilha 2]({{< relref "/trilha-2" >}}) (para quem quer entender mais) e a [Trilha 3]({{< relref "/trilha-3" >}}) (para quem já crê e quer crescer). Vá no seu ritmo.
 
 **Converse.** Se você tem perguntas ou só quer conversar sobre tudo isso, entre em contato. Ninguém aqui vai te julgar.
 
