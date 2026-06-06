@@ -1,6 +1,6 @@
 # AGENTS.md — Somos 1 (Guerreiro em Cristo)
 
-Projeto cristão de evangelização — arte + site Hugo em GitHub Pages. Imagem de guerreiro com armadura (Efésios 6) e 3 trilhas de conteúdo. Site: https://sejamos1.github.io
+Projeto cristão de evangelização — arte + site Hugo em GitHub Pages. Imagem de guerreiro com armadura (Efésios 6) e 3 trilhas de conteúdo. Site: https://romulo-falcao.github.io/sejamos1.github.io/
 
 ## Estrutura
 

@@ -1,0 +1,34 @@
+[[main]]
+  name = "Trilha 1"
+  pageRef = "trilha-1"
+  weight = 10
+
+[[main]]
+  name = "Trilha 2"
+  pageRef = "trilha-2"
+  weight = 20
+
+[[main]]
+  name = "Trilha 3"
+  pageRef = "trilha-3"
+  weight = 30
+
+[[footer]]
+  name = "Home"
+  pageRef = ""
+  weight = 10
+
+[[footer]]
+  name = "Trilha 1"
+  pageRef = "trilha-1"
+  weight = 20
+
+[[footer]]
+  name = "Trilha 2"
+  pageRef = "trilha-2"
+  weight = 30
+
+[[footer]]
+  name = "Trilha 3"
+  pageRef = "trilha-3"
+  weight = 40

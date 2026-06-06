@@ -1,6 +1,7 @@
 # Progresso do Projeto — Somos 1
 
-**Site**: https://sejamos1.github.io  
+**Site**: https://romulo-falcao.github.io/sejamos1.github.io/  
+**Repositório**: https://github.com/romulo-falcao/sejamos1.github.io  
 **Plataforma**: GitHub Pages + Hugo (static site generator)  
 **Tema**: [hugo-paper](https://github.com/nanxiaobei/hugo-paper)
 
@@ -19,7 +20,7 @@ Cole no início de cada nova conversa:
 ### ✅ Concluído
 
 - Análise crítica do projeto (.docx → Markdown, QR separado, vetorização futura)
-- Decisões de arquitetura: GitHub Pages + Hugo, domínio sejamos1.github.io
+- Decisões de arquitetura: GitHub Pages + Hugo
 - Hugo extended v0.162.1 instalado (binário no repo, em `.gitignore`)
 - Repositório git iniciado (branch `main`)
 - Tema hugo-paper instalado como submodule
@@ -31,7 +32,8 @@ Cole no início de cada nova conversa:
 - GitHub Actions workflow para deploy em `.github/workflows/deploy.yml`
 - `AGENTS.md` atualizado com comandos e estrutura Hugo
 - `files/PROGRESSO.md` criado para registro de sessões
-- `.gitignore` configurado (hugo, swp, DS_Store)
+- `.gitignore` configurado (hugo, swp, DS_Store, public/)
+- **Push para GitHub e deploy automático funcionando** ✅
 
 ### 🔄 Em andamento
 
@@ -51,7 +53,8 @@ Cole no início de cada nova conversa:
 |---|---|
 | Plataforma | GitHub Pages |
 | Gerador estático | Hugo |
-| Domínio | sejamos1.github.io |
+| URL atual | https://romulo-falcao.github.io/sejamos1.github.io/ |
+| Domínio desejado | sejamos1.github.io (requer org `sejamos1` no GitHub) |
 | QR Code no escudo | ❌ Não — será separado da imagem |
 | Arte final | Vetorização futura |
 | Fonte do conteúdo | Markdown no git (única fonte de verdade) |
@@ -83,6 +86,6 @@ Cole no início de cada nova conversa:
 
 **Próximos passos**
 1. Revisar conteúdo das 7 páginas (opcional)
-2. Fazer push para GitHub e testar deploy
+2. Para ter URL `sejamos1.github.io`: criar org `sejamos1` no GitHub e transferir repo
 3. Iniciar escrita das Trilhas 2 e 3
 4. Trabalhar na imagem/arte independentemente

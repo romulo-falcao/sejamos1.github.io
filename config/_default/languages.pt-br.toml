@@ -1,0 +1,17 @@
+locale = "pt-br"
+label = "Português (Brasil)"
+weight = 1
+title = "Somos 1 — Guerreiro em Cristo"
+
+[params]
+  displayName = "Português (Brasil)"
+  isoCode = "pt-br"
+  rtl = false
+  dateFormat = "2 de January de 2006"
+  description = "Um projeto cristão de evangelização. Uma imagem, um QR Code, três trilhas para conhecer Jesus."
+
+[params.author]
+  name = "Somos 1"
+  image = "img/author.jpg"
+  headline = "Para que todos sejam um"
+  bio = "Projeto cristão baseado em João 17:21 e Efésios 6:10-18."
