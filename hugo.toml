@@ -1,0 +1,25 @@
+baseURL = 'https://sejamos1.github.io'
+locale = 'pt-BR'
+title = 'Somos 1 — Guerreiro em Cristo'
+theme = 'hugo-paper'
+defaultContentLanguage = 'pt'
+
+removePathAccents = true
+
+[params]
+  description = 'Um projeto cristão de evangelização. Uma imagem, um QR Code, três trilhas para conhecer Jesus.'
+  keywords = 'cristianismo, evangelho, fé, Jesus, armadura de Deus, Efésios 6'
+
+[menu]
+  [[menu.main]]
+    name = 'Trilha 1'
+    url = '/trilha-1/'
+    weight = 1
+  [[menu.main]]
+    name = 'Trilha 2'
+    url = '/trilha-2/'
+    weight = 2
+  [[menu.main]]
+    name = 'Trilha 3'
+    url = '/trilha-3/'
+    weight = 3

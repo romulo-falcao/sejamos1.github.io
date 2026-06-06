@@ -1,0 +1,3 @@
+[submodule "/mnt/c/dev/opencode/somos-1/themes/hugo-paper"]
+	path = /mnt/c/dev/opencode/somos-1/themes/hugo-paper
+	url = https://github.com/nanxiaobei/hugo-paper.git
