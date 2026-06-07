@@ -40,6 +40,7 @@ defaultBackgroundImage = "/img/background.svg"
   showRelatedContent = false
   showTaxonomies = false
   showWordCount = false
+  sharingLinks = ["whatsapp", "facebook", "twitter", "telegram", "email"]
 
 [list]
   showHero = true

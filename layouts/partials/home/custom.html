@@ -1,41 +1,54 @@
 {{ $trilha1 := .Site.GetPage "trilha-1" }}
 {{ $trilha2 := .Site.GetPage "trilha-2" }}
 {{ $trilha3 := .Site.GetPage "trilha-3" }}
+{{ $armorImage := resources.Get "images/patch-armadura-de-deus.png" }}
 
-<section class="max-w-4xl mx-auto text-center px-4 py-12">
-  <div class="mb-8">
-    <h1 class="text-5xl sm:text-6xl font-bold mb-4" style="color: var(--color-primary-500);">
-      Sejamos 1
-    </h1>
-    <p class="text-xl sm:text-2xl text-neutral-500 dark:text-neutral-400 italic mb-6">
-      "Para que todos sejam um, como tu, ó Pai, estás em mim e eu em ti."
-    </p>
-    <p class="text-base text-neutral-400 dark:text-neutral-500">
-      — João 17:21
-    </p>
+{{/* Hero Section */}}
+<section class="relative overflow-hidden rounded-2xl mb-12">
+  {{ if $armorImage }}
+  <div class="absolute inset-0">
+    <img
+      class="h-full w-full object-cover nozoom"
+      src="{{ $armorImage.RelPermalink }}"
+      alt="Armadura de Deus — Efésios 6">
+    <div class="absolute inset-0 hero-overlay"></div>
   </div>
-
-  <hr class="my-8 border-neutral-200 dark:border-neutral-700 w-24 mx-auto">
-
-  <div class="max-w-2xl mx-auto mb-12 text-lg text-neutral-600 dark:text-neutral-400">
-    <p>
-      Um projeto de evangelização que une arte, tecnologia e a Palavra de Deus.
-      Uma imagem da Armadura de Deus (Efésios 6) que convida à reflexão —
-      e três caminhos para conhecer Jesus, cada um feito para o seu momento.
-    </p>
+  {{ end }}
+  <div class="relative px-6 py-20 sm:py-28 lg:py-36 text-center">
+    <div class="max-w-3xl mx-auto">
+      <h1 class="text-5xl sm:text-7xl font-extrabold mb-4 text-neutral-100" style="text-shadow: 0 2px 10px rgba(0,0,0,0.3);">
+        Sejamos 1
+      </h1>
+      <p class="text-xl sm:text-2xl text-neutral-200 italic mb-3 font-light">
+        "Para que todos sejam um, como tu, ó Pai, estás em mim e eu em ti."
+      </p>
+      <p class="text-sm text-neutral-300">
+        — João 17:21
+      </p>
+    </div>
   </div>
 </section>
 
-<section class="max-w-5xl mx-auto px-4 pb-16">
-  <h2 class="text-2xl font-semibold text-center mb-8 text-neutral-700 dark:text-neutral-300">
+{{/* Intro */}}
+<section class="max-w-3xl mx-auto text-center px-4 mb-12">
+  <p class="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed">
+    Um projeto de evangelização que une arte, tecnologia e a Palavra de Deus.
+    Uma imagem da <strong>Armadura de Deus</strong> (Efésios 6) que convida à reflexão —
+    e três caminhos para conhecer Jesus, cada um feito para o seu momento.
+  </p>
+</section>
+
+{{/* Trail Cards */}}
+<section class="max-w-5xl mx-auto px-4 mb-16">
+  <h2 class="text-2xl font-semibold text-center mb-10 text-neutral-700 dark:text-neutral-300">
     Onde você está nessa jornada?
   </h2>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-    {{/* Trilha 1 — pronta */}}
+    {{/* Trilha 1 */}}
     <a href="{{ $trilha1.RelPermalink }}" class="block group">
-      <div class="rounded-2xl border-2 border-primary-200 dark:border-primary-800 bg-white dark:bg-neutral-800 p-6 hover:shadow-lg hover:border-primary-400 dark:hover:border-primary-600 transition-all duration-300">
+      <div class="rounded-2xl border-2 border-primary-200 dark:border-primary-800 bg-white dark:bg-neutral-800 p-6 hover:shadow-xl hover:border-primary-400 dark:hover:border-primary-600 hover:-translate-y-1 transition-all duration-300 h-full flex flex-col">
         <div class="text-4xl mb-4 text-primary-500 group-hover:scale-110 transition-transform duration-300">
           {{ partial "icon.html" "circle-question" }}
         </div>
@@ -45,15 +58,18 @@
         <p class="text-sm text-neutral-500 dark:text-neutral-400 font-medium uppercase tracking-wider mb-3">
           Nunca ouvi falar de Jesus
         </p>
-        <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">
+        <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed flex-grow">
           Para quem está começando do zero. Linguagem simples, acolhedora, sem jargão religioso.
         </p>
+        <span class="mt-4 text-primary-600 dark:text-primary-400 text-sm font-semibold group-hover:underline">
+          Começar →
+        </span>
       </div>
     </a>
 
-    {{/* Trilha 2 — pronta */}}
+    {{/* Trilha 2 */}}
     <a href="{{ $trilha2.RelPermalink }}" class="block group">
-      <div class="rounded-2xl border-2 border-primary-200 dark:border-primary-800 bg-white dark:bg-neutral-800 p-6 hover:shadow-lg hover:border-primary-400 dark:hover:border-primary-600 transition-all duration-300">
+      <div class="rounded-2xl border-2 border-primary-200 dark:border-primary-800 bg-white dark:bg-neutral-800 p-6 hover:shadow-xl hover:border-primary-400 dark:hover:border-primary-600 hover:-translate-y-1 transition-all duration-300 h-full flex flex-col">
         <div class="text-4xl mb-4 text-primary-500 group-hover:scale-110 transition-transform duration-300">
           {{ partial "icon.html" "list-check" }}
         </div>
@@ -63,15 +79,18 @@
         <p class="text-sm text-neutral-500 dark:text-neutral-400 font-medium uppercase tracking-wider mb-3">
           Já ouvi falar, quero entender mais
         </p>
-        <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">
+        <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed flex-grow">
           Para quem tem contato superficial e quer base bíblica e respostas.
         </p>
+        <span class="mt-4 text-primary-600 dark:text-primary-400 text-sm font-semibold group-hover:underline">
+          Explorar →
+        </span>
       </div>
     </a>
 
-    {{/* Trilha 3 — pronta */}}
+    {{/* Trilha 3 */}}
     <a href="{{ $trilha3.RelPermalink }}" class="block group">
-      <div class="rounded-2xl border-2 border-primary-200 dark:border-primary-800 bg-white dark:bg-neutral-800 p-6 hover:shadow-lg hover:border-primary-400 dark:hover:border-primary-600 transition-all duration-300">
+      <div class="rounded-2xl border-2 border-primary-200 dark:border-primary-800 bg-white dark:bg-neutral-800 p-6 hover:shadow-xl hover:border-primary-400 dark:hover:border-primary-600 hover:-translate-y-1 transition-all duration-300 h-full flex flex-col">
         <div class="text-4xl mb-4 text-primary-500 group-hover:scale-110 transition-transform duration-300">
           {{ partial "icon.html" "star" }}
         </div>
@@ -81,19 +100,35 @@
         <p class="text-sm text-neutral-500 dark:text-neutral-400 font-medium uppercase tracking-wider mb-3">
           Sou cristão, quero crescer
         </p>
-        <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed">
+        <p class="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed flex-grow">
           Para quem já crê e busca profundidade e desafio espiritual.
         </p>
+        <span class="mt-4 text-primary-600 dark:text-primary-400 text-sm font-semibold group-hover:underline">
+          Aprofundar →
+        </span>
       </div>
     </a>
 
   </div>
+</section>
 
-  <div class="text-center mt-12">
-    <p class="text-sm text-neutral-400 dark:text-neutral-500 italic">
+{{/* Versículo do Dia */}}
+<section class="max-w-2xl mx-auto px-4 pb-8 text-center">
+  <div id="versiculo-do-dia" class="verse-card opacity-0 transition-opacity duration-500">
+    <p class="text-xs font-semibold uppercase tracking-widest text-neutral-400 dark:text-neutral-500 mb-2">Versículo do Dia</p>
+    <p class="text-lg italic text-neutral-700 dark:text-neutral-300 mb-2" data-verse-text></p>
+    <p class="text-sm text-neutral-500 dark:text-neutral-400" data-verse-ref></p>
+  </div>
+</section>
+{{ partial "versiculo-do-dia.html" . }}
+
+{{/* Bottom verse */}}
+<section class="max-w-2xl mx-auto px-4 pb-16 text-center">
+  <div class="verse-card">
+    <p class="text-lg italic text-neutral-700 dark:text-neutral-300 mb-2">
       "Eu vim para que tenham vida, e a tenham em abundância."
     </p>
-    <p class="text-xs text-neutral-400 dark:text-neutral-500">
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
       — João 10:10
     </p>
   </div>

@@ -13,6 +13,21 @@
   pageRef = "trilha-3"
   weight = 30
 
+[[main]]
+  name = "Sobre"
+  pageRef = "sobre"
+  weight = 40
+
+[[main]]
+  name = "Oração"
+  pageRef = "oracao"
+  weight = 50
+
+[[main]]
+  name = "Contato"
+  pageRef = "contato"
+  weight = 60
+
 [[footer]]
   name = "Home"
   pageRef = ""
@@ -32,3 +47,18 @@
   name = "Trilha 3"
   pageRef = "trilha-3"
   weight = 40
+
+[[footer]]
+  name = "Sobre"
+  pageRef = "sobre"
+  weight = 50
+
+[[footer]]
+  name = "Oração"
+  pageRef = "oracao"
+  weight = 60
+
+[[footer]]
+  name = "Contato"
+  pageRef = "contato"
+  weight = 70

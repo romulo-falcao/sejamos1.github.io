@@ -1,0 +1,22 @@
+{{ with .Site.Data.versiculos }}
+{{ $verses := . }}
+<script>
+(function() {
+  var verses = {{ $verses | jsonify | safeJS }};
+  if (!verses || verses.length === 0) return;
+
+  var now = new Date();
+  var start = new Date(now.getFullYear(), 0, 0);
+  var diff = (now - start) + (start.getTimezoneOffset() - now.getTimezoneOffset()) * 60000;
+  var dayOfYear = Math.floor(diff / 86400000);
+  var index = dayOfYear % verses.length;
+
+  var el = document.getElementById('versiculo-do-dia');
+  if (el) {
+    el.querySelector('[data-verse-text]').textContent = '"' + verses[index].text + '"';
+    el.querySelector('[data-verse-ref]').textContent = '— ' + verses[index].ref;
+    el.classList.remove('opacity-0');
+  }
+})();
+</script>
+{{ end }}

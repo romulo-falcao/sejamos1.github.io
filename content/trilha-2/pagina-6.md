@@ -36,4 +36,16 @@ Se você quer dar esse passo, pode começar com uma oração honesta:
 
 Uma nova criatura. Isso é o que você pode ser.
 
+<div class="next-step mt-8 text-center">
+  <p class="text-lg font-semibold text-neutral-800 dark:text-neutral-100 mb-2">
+    Seu próximo passo
+  </p>
+  <p class="text-neutral-600 dark:text-neutral-400 mb-4">
+    Se você deu o passo da fé — ou quer se aprofundar — a <strong>Trilha 3</strong> foi feita para te desafiar a crescer como discípulo: a armadura de Deus, a oração de João 17, a vida no Espírito.
+  </p>
+  <a href="{{< relref "/trilha-3" >}}" class="inline-flex items-center gap-2 px-6 py-3 bg-primary-500 text-white rounded-xl font-semibold hover:bg-primary-600 transition-colors no-underline">
+    Ir para a Trilha 3 →
+  </a>
+</div>
+
 [← Anterior: O que significa seguir a Jesus hoje?]({{< relref "/trilha-2/pagina-5" >}}) | [Voltar ao início]({{< relref "/" >}})

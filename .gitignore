@@ -3,3 +3,4 @@ hugo
 .DS_Store
 public/
 .hugo_build.lock
+files/

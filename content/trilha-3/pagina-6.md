@@ -47,4 +47,22 @@ A armadura não foi feita para ficar no armário. Foi feita para ser usada na ba
 
 **Que Deus te abençoe e te fortaleça nesta jornada. Você não está sozinho.**
 
+<div class="next-step mt-8 text-center">
+  <p class="text-lg font-semibold text-neutral-800 dark:text-neutral-100 mb-2">
+    Compartilhe esta mensagem
+  </p>
+  <p class="text-neutral-600 dark:text-neutral-400 mb-4">
+    Se este conteúdo fez diferença para você, compartilhe com alguém que também precisa ouvir.
+    Uma conversa pode mudar uma vida.
+  </p>
+  <div class="flex justify-center gap-3 share-section pt-6">
+    <a href="https://api.whatsapp.com/send?text=Conhe%C3%A7a%20o%20Sejamos%201%20%E2%80%94%20tr%C3%AAs%20trilhas%20para%20conhecer%20Jesus%3A%20https%3A%2F%2Fsejamos1.github.io" target="_blank" class="contact-btn contact-btn-whatsapp text-sm">
+      {{< icon "whatsapp" >}} Compartilhar no WhatsApp
+    </a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsejamos1.github.io" target="_blank" class="contact-btn contact-btn-email text-sm" style="background: #1877F2;">
+      {{< icon "facebook" >}} Facebook
+    </a>
+  </div>
+</div>
+
 [← Anterior: Evangelizar é responsabilidade de todos]({{< relref "/trilha-3/pagina-5" >}}) | [Voltar ao início]({{< relref "/" >}})

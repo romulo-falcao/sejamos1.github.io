@@ -26,12 +26,24 @@ Isso é o começo. E começos importam.
 
 **Continue explorando.** Aqui no site você encontra a [Trilha 2]({{< relref "/trilha-2" >}}) (para quem quer entender mais) e a [Trilha 3]({{< relref "/trilha-3" >}}) (para quem já crê e quer crescer). Vá no seu ritmo.
 
-**Converse.** Se você tem perguntas ou só quer conversar sobre tudo isso, entre em contato. Ninguém aqui vai te julgar.
+**Converse.** Se você tem perguntas ou só quer conversar sobre tudo isso, [entre em contato]({{< relref "/contato" >}}). Ninguém aqui vai te julgar.
 
 > "Eu vim para que tenham vida, e a tenham em abundância." — João 10:10
 
 Você não está sozinho nessa jornada.
 
 Seja bem-vindo à família.
+
+<div class="next-step mt-8 text-center">
+  <p class="text-lg font-semibold text-neutral-800 dark:text-neutral-100 mb-2">
+    Próximo passo natural
+  </p>
+  <p class="text-neutral-600 dark:text-neutral-400 mb-4">
+    Se o que você leu aqui fez sentido, a <strong>Trilha 2</strong> vai te ajudar a entender por que a Bíblia é confiável, quem foi Jesus de fato e o que significa seguir a ele hoje.
+  </p>
+  <a href="{{< relref "/trilha-2" >}}" class="inline-flex items-center gap-2 px-6 py-3 bg-primary-500 text-white rounded-xl font-semibold hover:bg-primary-600 transition-colors no-underline">
+    Ir para a Trilha 2 →
+  </a>
+</div>
 
 [← Anterior: O que é o Evangelho?]({{< relref "/trilha-1/pagina-6" >}}) | [Voltar ao início]({{< relref "/" >}})
