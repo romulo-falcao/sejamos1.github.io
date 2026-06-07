@@ -6,3 +6,5 @@ public/
 files/
 AGENTS.md
 resources/
+node_modules/
+hugo_stats.json

@@ -1,0 +1,41 @@
+{{ define "main" }}
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-8">
+    <header class="mb-8">
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-navy-500">{{ .Title }}</h1>
+      {{ with .Description }}
+        <p class="mt-2 text-lg text-slate-500">{{ . }}</p>
+      {{ end }}
+    </header>
+
+    {{ if .Content }}
+      <div class="prose prose-slate max-w-none mb-12">
+        {{ .Content }}
+      </div>
+    {{ end }}
+
+    {{ if gt .Pages 0 }}
+      <div class="space-y-4">
+        {{ range .Pages.ByWeight }}
+          <a href="{{ .RelPermalink }}" class="block group no-underline">
+            <div class="flex items-center gap-4 p-4 rounded-xl border border-slate-200 hover:border-gold-400 hover:bg-cream-50 transition-all duration-200">
+              <span class="flex-shrink-0 w-8 h-8 rounded-full bg-navy-500 text-white flex items-center justify-center text-sm font-bold">
+                {{ .Params.weight }}
+              </span>
+              <div class="flex-1 min-w-0">
+                <h3 class="text-base font-semibold text-navy-500 group-hover:text-gold-600 transition-colors truncate">
+                  {{ .Title }}
+                </h3>
+                {{ with .Description }}
+                  <p class="text-sm text-slate-500 mt-0.5 line-clamp-1">{{ . }}</p>
+                {{ end }}
+              </div>
+              <span class="text-gold-500 flex-shrink-0 group-hover:translate-x-1 transition-transform">
+                {{ partial "icon.html" "arrow-right" }}
+              </span>
+            </div>
+          </a>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

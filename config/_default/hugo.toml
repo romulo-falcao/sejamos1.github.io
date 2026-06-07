@@ -1,9 +1,27 @@
-theme = "blowfish"
 baseURL = "https://sejamos1.github.io"
 defaultContentLanguage = "pt-br"
 enableRobotsTXT = true
 summaryLength = 30
 enableEmoji = true
+
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+  [[build.cachebusters]]
+    source = '(postcss|tailwind)\.config\.js'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
 
 [pagination]
   pagerSize = 10
@@ -11,25 +29,10 @@ enableEmoji = true
 [imaging]
   anchor = 'Center'
 
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-  author = "authors"
-
 [sitemap]
   changefreq = 'always'
   filename = 'sitemap.xml'
   priority = 0.5
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-[related]
-  threshold = 0
-  toLower = false
-  [[related.indices]]
-    name = "tags"
-    weight = 100
-  [[related.indices]]
-    name = "categories"
-    weight = 100
+  home = ["HTML", "RSS"]

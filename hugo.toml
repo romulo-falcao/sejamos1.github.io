@@ -1,3 +1,1 @@
-# Config principal em config/_default/
-theme = "blowfish"
 baseURL = "https://sejamos1.github.io"

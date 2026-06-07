@@ -1,64 +1,6 @@
-colorScheme = "ocean"
 defaultAppearance = "light"
-autoSwitchAppearance = true
 
-enableSearch = true
-enableCodeCopy = false
-enableStructuredBreadcrumbs = true
-
-mainSections = ["trilha-1", "trilha-2", "trilha-3"]
-
-defaultBackgroundImage = "/img/background.svg"
-
-[header]
-  layout = "fixed"
-
-[footer]
-  showMenu = true
-  showCopyright = true
-  showThemeAttribution = false
-  showAppearanceSwitcher = true
-  showScrollToTop = true
-
-[homepage]
-  layout = "custom"
-  showRecent = false
-  cardView = false
-
-[article]
-  showDate = false
-  showDateUpdated = false
-  showAuthor = false
-  showHero = true
-  heroStyle = "background"
-  showBreadcrumbs = true
-  showDraftLabel = true
-  showHeadingAnchors = true
-  showPagination = true
-  showReadingTime = true
-  showTableOfContents = false
-  showRelatedContent = false
-  showTaxonomies = false
-  showWordCount = false
-  sharingLinks = ["whatsapp", "facebook", "twitter", "telegram", "email"]
-
-[list]
-  showHero = true
-  heroStyle = "background"
-  showBreadcrumbs = true
-  showSummary = false
-  showCards = true
-  orderByWeight = true
-  groupByYear = false
-  cardView = true
-
-[taxonomy]
-  showTermCount = true
-  showHero = true
-  heroStyle = "background"
-
-[term]
-  showHero = true
-  heroStyle = "background"
-  cardView = true
-  groupByYear = false
+[author]
+  name = "Sejamos 1"
+  headline = "Para que todos sejam um"
+  bio = "Projeto cristão baseado em João 17:21 e Efésios 6:10-18."

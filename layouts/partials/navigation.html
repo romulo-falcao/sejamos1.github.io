@@ -1,0 +1,23 @@
+{{ $currentPage := . }}
+{{ $pages := .CurrentSection.Pages.ByWeight }}
+{{ $next := "" }}
+{{ range $i, $p := $pages }}
+  {{ if eq $p.File.Path $currentPage.File.Path }}
+    {{ if lt (add $i 1) (len $pages) }}
+      {{ $next = index $pages (add $i 1) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if $next }}
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 mb-8">
+    <div class="next-step-card text-center">
+      <p class="text-lg font-semibold text-navy-500 mb-1">Próximo passo</p>
+      <p class="text-sm text-slate-600 mb-4">{{ $next.Description | default "Continue sua jornada" }}</p>
+      <a href="{{ $next.RelPermalink }}" class="inline-flex items-center gap-2 px-8 py-3 bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold rounded-xl transition-all no-underline text-base">
+        Próximo: {{ $next.Title }}
+        {{ partial "icon.html" "arrow-right" }}
+      </a>
+    </div>
+  </div>
+{{ end }}
