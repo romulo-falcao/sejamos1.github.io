@@ -4,3 +4,5 @@ hugo
 public/
 .hugo_build.lock
 files/
+AGENTS.md
+resources/

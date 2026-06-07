@@ -2,14 +2,15 @@
 {{ $trilha2 := .Site.GetPage "trilha-2" }}
 {{ $trilha3 := .Site.GetPage "trilha-3" }}
 {{ $armorImage := resources.Get "images/patch-armadura-de-deus.png" }}
+{{ $armorWebp := $armorImage.Resize "1024x webp q80" }}
 
 {{/* Hero Section */}}
 <section class="relative overflow-hidden rounded-2xl mb-12">
-  {{ if $armorImage }}
+  {{ if $armorWebp }}
   <div class="absolute inset-0">
     <img
       class="h-full w-full object-cover nozoom"
-      src="{{ $armorImage.RelPermalink }}"
+      src="{{ $armorWebp.RelPermalink }}"
       alt="Armadura de Deus — Efésios 6">
     <div class="absolute inset-0 hero-overlay"></div>
   </div>
